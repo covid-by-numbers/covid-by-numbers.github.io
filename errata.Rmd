@@ -1,0 +1,9 @@
+---
+title: "Errata"
+description: |
+  A place to note errata
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

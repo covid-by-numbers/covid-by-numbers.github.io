@@ -1,0 +1,21 @@
+---
+title: "Code"
+description: |
+  A place to store code and data from the book
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Diamonds
+
+An example of code and plots displayed within the website.
+You can download the [data here]("https://github.com/StatsRhian/covid-by-numbers.github.io/data/diamonds.csv").
+
+```{r}
+library("ggplot2")
+
+ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point()
+```
