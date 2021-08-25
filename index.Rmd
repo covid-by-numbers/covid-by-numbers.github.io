@@ -1,7 +1,7 @@
 ---
 title: "Covid by Numbers"
 description: |
-  Companion website for the Covid by Numbers book
+  This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.
 site: distill::distill_website
 ---
 

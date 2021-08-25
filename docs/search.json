@@ -5,8 +5,8 @@
       "title": "Code",
       "description": "A place to store code and data from the book",
       "author": [],
-      "contents": "\nDiamonds\nAn example of code and plots displayed within the website. You can download the data here.\n\n\nlibrary(\"ggplot2\")\n\nggplot(diamonds, aes(x = carat, y = price)) +\n  geom_point()\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-08-25T20:31:34+01:00"
+      "contents": "\nData\nAll the data for the book can be found in the GitHub repository.\nDiamonds\nAn example of code and plots displayed within the website. You can download the diamonds dataset here.\n\n\nlibrary(\"ggplot2\")\n\nggplot(diamonds, aes(x = carat, y = price)) +\n  geom_point()\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-08-25T20:38:40+01:00"
     },
     {
       "path": "errata.html",
@@ -14,15 +14,15 @@
       "description": "A place to note errata",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-25T20:31:34+01:00"
+      "last_modified": "2021-08-25T20:38:41+01:00"
     },
     {
       "path": "index.html",
       "title": "Covid by Numbers",
-      "description": "Companion website for the Covid by Numbers book\n",
+      "description": "This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.\n",
       "author": [],
       "contents": "\nIntroductory text can go here.\nMarkdown\nMarkdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for\nSyntax highlighted code block\n\n# Header 1\n## Header 2\n### Header 3\n\n- Bulleted\n- List\n\n1. Numbered\n2. List\n\n**Bold** and _Italic_ and `Code` text\n\n[Link](url) and ![Image](src)\nFor more details see GitHub Flavored Markdown.\nAnother header\nMore text lorem ipsum.\nAcknowledgments\nThis is a website made with the distill package.\nCorrections\nSomething else\n\n\n\n",
-      "last_modified": "2021-08-25T20:31:35+01:00"
+      "last_modified": "2021-08-25T20:38:41+01:00"
     }
   ],
   "collections": []

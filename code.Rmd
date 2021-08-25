@@ -8,10 +8,14 @@ description: |
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Data
+
+All the data for the book can be found in the [GitHub repository](https://github.com/StatsRhian/covid-by-numbers.github.io/tree/main/data).
+
 ### Diamonds
 
 An example of code and plots displayed within the website.
-You can download the [data here]("https://github.com/StatsRhian/covid-by-numbers.github.io/data/diamonds.csv").
+You can download the [diamonds dataset here]("https://github.com/StatsRhian/covid-by-numbers.github.io/blob/main/data/diamonds.csv").
 
 ```{r}
 library("ggplot2")
