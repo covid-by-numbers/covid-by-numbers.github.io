@@ -1,0 +1,27 @@
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #191d1a;
+  font-size: 16px;
+}
+
+.distill-site-nav {
+
+  color: #fdfeff;
+  background-color: #1ac6d4;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}

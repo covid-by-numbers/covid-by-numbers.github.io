@@ -1,0 +1,49 @@
+---
+title: "Covid by Numbers"
+description: |
+  This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Introductory text can go here.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Another header
+
+
+More text lorem ipsum.
+
+## Acknowledgments {.appendix}
+
+This is a website made with the [distill package](https://rstudio.github.io/distill/).
+
+## Corrections  {.appendix}
+
+Something else

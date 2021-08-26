@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "path": "code.html",
+      "title": "Code",
+      "description": "A place to store code and data from the book",
+      "author": [],
+      "contents": "\nData\nAll the data for the book can be found in the GitHub repository.\nChapter 2\nFigure 2.1 Data Code Figure\nFigure 2.2 Data Code Figure\nFigure 2.3 Data Code Figure\nChapter 3\nDiamonds\nAn example of code and plots displayed within the website. You can download the diamonds dataset here.\n\n\nlibrary(\"ggplot2\")\nggplot(diamonds, aes(x = carat, y = price)) +\n  geom_point()\n\n\n\n\n\n\n\n",
+      "last_modified": "2021-08-26T14:23:50+01:00"
+    },
+    {
+      "path": "errata.html",
+      "title": "Errata",
+      "description": "A place to note errata",
+      "author": [],
+      "contents": "\nI can write nice stuff here\n\n\n\n",
+      "last_modified": "2021-08-26T14:23:50+01:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Covid by Numbers",
+      "description": "This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.\n",
+      "author": [],
+      "contents": "\nIntroductory text can go here.\nMarkdown\nMarkdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for\nSyntax highlighted code block\n\n# Header 1\n## Header 2\n### Header 3\n\n- Bulleted\n- List\n\n1. Numbered\n2. List\n\n**Bold** and _Italic_ and `Code` text\n\n[Link](url) and ![Image](src)\nFor more details see GitHub Flavored Markdown.\nAnother header\nMore text lorem ipsum.\nAcknowledgments\nThis is a website made with the distill package.\nCorrections\nSomething else\n\n\n\n",
+      "last_modified": "2021-08-26T14:23:51+01:00"
+    }
+  ],
+  "collections": []
+}
