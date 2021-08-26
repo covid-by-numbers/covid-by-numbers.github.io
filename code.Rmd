@@ -12,6 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 All the data for the book can be found in the [GitHub repository](https://github.com/StatsRhian/covid-by-numbers.github.io/tree/main/data).
 
+### Chapter 2
+
+- Figure 2.1 [Data](https://github.com/StatsRhian/covid-by-numbers.github.io/blob/main/data/diamonds.csv) Code [Figure]()
+- Figure 2.2 [Data]() Code [Figure]()
+- Figure 2.3 [Data]() Code [Figure]()
+
+
+### Chapter 3
+
+
 ### Diamonds
 
 An example of code and plots displayed within the website.
@@ -19,7 +29,6 @@ You can download the [diamonds dataset here]("https://github.com/StatsRhian/covi
 
 ```{r}
 library("ggplot2")
-
 ggplot(diamonds, aes(x = carat, y = price)) +
   geom_point()
 ```
