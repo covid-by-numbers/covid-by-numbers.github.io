@@ -25,4 +25,4 @@ The chapters with R graphs are:
 - **Chapter 21:** What has been the effect on the economy?
 - **Chapter 22:** How effective are the vaccines?
 - **Chapter 24:** How has been getting the vaccines?
-- **Chapter 25:** How far apart should the vacicnes be given?
+- **Chapter 25:** How far apart should the vaccines be given?
