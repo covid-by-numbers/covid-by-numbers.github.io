@@ -8,4 +8,10 @@ description: |
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I can write nice stuff here
+This page notes errors and make corrections in the book. If you found an error, please contact us on covid-by-numbers@outlook.com.
+
+All apologies in advance.
+
+## Errors
+
+- **Page 296** in the first print: In the index, "science Media Centre" is missing a capital on the first word. It should read: "Science Media Centre".

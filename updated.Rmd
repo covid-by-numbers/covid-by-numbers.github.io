@@ -1,0 +1,13 @@
+---
+title: "Updated graphs"
+description: |
+  Some selected updated graphs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Updated graphs
+
+The code for these graphs is available in the GitHub repository.

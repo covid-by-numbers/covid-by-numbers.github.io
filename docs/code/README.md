@@ -1,19 +1,9 @@
----
-title: "Code"
-description: |
-  A place to store code and data from the book
----
+## Purpose
+This folder will host the code and spreadsheets for the original graphs in each chapter of 'Covid by Numbers'.
+This is the original version produced in R, and will differ in appearance to graphs published in the book itself.
+In addition, some chapters contain graphs not featured in the book.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## Code and graphs
-
-Each link will take to the GitHub repository, where there is the R code and spreadsheets used to create the original graphs.
-
-These graphs are in grey-scale. There are also some colour versions created for presentations by the authors. In addition, there is code for graphs cut from published versions of the book. In the book itself, graphs were remade in the house style, so the appearance differs.
-
+The chapters with R graphs are:
 - **Chapter 1:** Introduction
 - **Chapter 2:** How did the pandemic develop?
 - **Chapter 3:** How infectious is SARS-CoV-2?

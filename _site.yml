@@ -9,18 +9,16 @@ navbar:
     href: https://covid-by-numbers.github.io/
   right:
     - text: "Code"
-      href: code.html
+      menu:
+        - text: "Book graphs"
+          href: code.html
+        - text: "---"
+        - text: "Updated graphs"
+          href: updated.html
     - text: "Errata"
       href: errata.html
     - text: "End Notes"
-      menu:
-        - text: "End Notes"
-          href: publish_article.html
-        - text: "Quality"
-          href: publish_website.html
-        - text: "---"
-        - text: "Methodology"
-          href: metadata.html
+      href: endnotes.html
   search: true
   source_url: https://github.com/covid-by-numbers/covid-by-numbers.github.io
 output:
