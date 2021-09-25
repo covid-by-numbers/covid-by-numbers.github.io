@@ -88,27 +88,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Covid by Numbers</title>
 
-  <meta property="description" itemprop="description" content="This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters."/>
+  <meta property="description" itemprop="description" content="This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Covid by Numbers"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters."/>
+  <meta property="og:description" content="This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Covid by Numbers"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Covid by Numbers"/>
-  <meta property="twitter:description" content="This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters."/>
+  <meta property="twitter:description" content="This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Covid by Numbers"]},{"type":"character","attributes":{},"value":["This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Covid by Numbers"]},{"type":"character","attributes":{},"value":["This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2046,10 +2046,49 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <style type="text/css">
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProBold-Regular.eot');
+      src: url('fonts/FreightTextProBold-Regular.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProBold-Regular.woff2') format('woff2'),
+          url('fonts/FreightTextProBold-Regular.woff') format('woff'),
+          url('fonts/FreightTextProBold-Regular.ttf') format('truetype'),
+          url('fonts/FreightTextProBold-Regular.svg#FreightTextProBold-Regular') format('svg');
+      font-weight: bold;
+      font-style: bold;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProMedium-Italic.eot');
+      src: url('fonts/FreightTextProMedium-Italic.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProMedium-Italic.woff2') format('woff2'),
+          url('fonts/FreightTextProMedium-Italic.woff') format('woff'),
+          url('fonts/FreightTextProMedium-Italic.ttf') format('truetype'),
+          url('fonts/FreightTextProMedium-Italic.svg#FreightTextProMedium-Italic') format('svg');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProMedium-Regular.eot');
+      src: url('fonts/FreightTextProMedium-Regular.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProMedium-Regular.woff2') format('woff2'),
+          url('fonts/FreightTextProMedium-Regular.woff') format('woff'),
+          url('fonts/FreightTextProMedium-Regular.ttf') format('truetype'),
+          url('fonts/FreightTextProMedium-Regular.svg#FreightTextProMedium-Regular') format('svg');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FreightTextPro', 'Montserrat', Sans-Serif;
     color: #191d1a;
     font-size: 16px;
   }
@@ -2060,11 +2099,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: #1ac6d4;
     font-size: 16px;
     font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FreightTextPro', 'Montserrat', Sans-Serif;
   }
-
-
-
 
   @media print {
     .distill-site-nav {
@@ -2084,7 +2120,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Covid by Numbers","description":"This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.","authors":[]}
+{"title":"Covid by Numbers","description":"This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2128,7 +2164,7 @@ Code
 <h1>Covid by Numbers</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.</p></p>
+<p><p>This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.</p></p>
 </div>
 
 
@@ -2136,7 +2172,7 @@ Code
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="images/COVIDbyNumbers_TwitterHeader_04.jpg" /><!-- --></p>
 </div>
-<p>This is the accompanying website for <a href="https://www.penguin.co.uk/books/446/446585/covid-by-numbers/9780241547731.html">Covid by Numbers</a>, published by Penguin Random House on 30th September 2021. This book was written by Prof Sir David Spiegelhalter and Anthony Masters.</p>
+<p>This is the accompanying website for <a href="https://www.penguin.co.uk/books/446/446585/covid-by-numbers/9780241547731.html">Covid by Numbers</a>, published by Penguin Random House on 7th October 2021. This book was written by David Spiegelhalter and Anthony Masters.</p>
 <p>This book is to help you understand the pandemic statistics you see and hear in the news. The role of this website is to:</p>
 <ul>
 <li>Host the code and spreadsheet for the graphs produced in R.</li>

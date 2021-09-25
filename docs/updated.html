@@ -2046,10 +2046,49 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <style type="text/css">
   /* Optional: embed custom fonts here with `@import`          */
   /* This must remain at the top of this file.                 */
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProBold-Regular.eot');
+      src: url('fonts/FreightTextProBold-Regular.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProBold-Regular.woff2') format('woff2'),
+          url('fonts/FreightTextProBold-Regular.woff') format('woff'),
+          url('fonts/FreightTextProBold-Regular.ttf') format('truetype'),
+          url('fonts/FreightTextProBold-Regular.svg#FreightTextProBold-Regular') format('svg');
+      font-weight: bold;
+      font-style: bold;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProMedium-Italic.eot');
+      src: url('fonts/FreightTextProMedium-Italic.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProMedium-Italic.woff2') format('woff2'),
+          url('fonts/FreightTextProMedium-Italic.woff') format('woff'),
+          url('fonts/FreightTextProMedium-Italic.ttf') format('truetype'),
+          url('fonts/FreightTextProMedium-Italic.svg#FreightTextProMedium-Italic') format('svg');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'FreightTextPro';
+      src: url('fonts/FreightTextProMedium-Regular.eot');
+      src: url('fonts/FreightTextProMedium-Regular.eot?#iefix') format('embedded-opentype'),
+          url('fonts/FreightTextProMedium-Regular.woff2') format('woff2'),
+          url('fonts/FreightTextProMedium-Regular.woff') format('woff'),
+          url('fonts/FreightTextProMedium-Regular.ttf') format('truetype'),
+          url('fonts/FreightTextProMedium-Regular.svg#FreightTextProMedium-Regular') format('svg');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+  }
+
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FreightTextPro', 'Montserrat', Sans-Serif;
     color: #191d1a;
     font-size: 16px;
   }
@@ -2060,11 +2099,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: #1ac6d4;
     font-size: 16px;
     font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FreightTextPro', 'Montserrat', Sans-Serif;
   }
-
-
-
 
   @media print {
     .distill-site-nav {

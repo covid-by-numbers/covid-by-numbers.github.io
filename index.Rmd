@@ -1,7 +1,7 @@
 ---
 title: "Covid by Numbers"
 description: |
-  This site hosts for the code for the Covid by Numbers book by Sir David Spiegelhalter and Anthony Masters.
+  This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.
 site: distill::distill_website
 ---
 
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("images/COVIDbyNumbers_TwitterHeader_04.jpg")
 ```
 
-This is the accompanying website for [Covid by Numbers](https://www.penguin.co.uk/books/446/446585/covid-by-numbers/9780241547731.html), published by Penguin Random House on 30th September 2021. This book was written by Prof Sir David Spiegelhalter and Anthony Masters.
+This is the accompanying website for [Covid by Numbers](https://www.penguin.co.uk/books/446/446585/covid-by-numbers/9780241547731.html), published by Penguin Random House on 7th October 2021. This book was written by David Spiegelhalter and Anthony Masters.
 
 This book is to help you understand the pandemic statistics you see and hear in the news. The role of this website is to:
 
