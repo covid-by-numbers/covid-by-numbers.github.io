@@ -24,5 +24,5 @@ The chapters with R graphs are:
 - **Chapter 19:** What has happened to mental health and well-being?
 - **Chapter 21:** What has been the effect on the economy?
 - **Chapter 22:** How effective are the vaccines?
-- **Chapter 24:** How has been getting the vaccines?
+- **Chapter 24:** Who has been getting the vaccines? (in the same folder as Chapter 7)
 - **Chapter 25:** How far apart should the vaccines be given?
