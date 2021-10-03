@@ -54,7 +54,11 @@ knitr::include_graphics("images/COVIDbyNumbers_Quote_HF.jpg")
 
 **Dr Hannah Fry** (mathematician, broadcaster, and author of 'Hello World'): Fantastic and wonderfully readable. A much needed antidote to the often murky and misinterpreted world of Covid data, explained in a straightforward and clear way - yet always remembering the humanity the data represents.
 
-**Tim Harford** (host of BBC's More or Less and author of 'How to Make the World Add Up'): I couldn't imagine a better guidebook for making sense of a tragic and momentous time in our lives. Covid by Numbers is comprehensive yet concise, impeccably clear and always humane. 
+**Tim Harford** (host of BBC's More or Less and author of 'How to Make the World Add Up'): I couldn't imagine a better guidebook for making sense of a tragic and momentous time in our lives. Covid by Numbers is comprehensive yet concise, impeccably clear and always humane.
+
+**Prof Oliver Johnson** (University of Bristol mathematics professor in [The Guardian](https://www.theguardian.com/books/2021/sep/30/covid-by-numbers-review-how-to-make-sense-of-the-statistics)): If journalists, politicians and the public were all provided with a copy then the debate would be vastly better informed, with much more light than heat.
+
+**Prof Adam Kucharski** (LSHTM professor and author of 'The Rules of Contagion in [The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02128-0/fulltext)): The result is a valuable overview of COVID-19 statistics and how to navigate them. Rather than just quoting numbers, Spiegelhalter and Masters discuss how to think about epidemic data.
 
 ## Acknowledgments {.appendix}
 
