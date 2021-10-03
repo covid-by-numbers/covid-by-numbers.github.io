@@ -58,7 +58,7 @@ knitr::include_graphics("images/COVIDbyNumbers_Quote_HF.jpg")
 
 **Prof Oliver Johnson** (University of Bristol mathematics professor in [The Guardian](https://www.theguardian.com/books/2021/sep/30/covid-by-numbers-review-how-to-make-sense-of-the-statistics)): If journalists, politicians and the public were all provided with a copy then the debate would be vastly better informed, with much more light than heat.
 
-**Prof Adam Kucharski** (LSHTM professor and author of 'The Rules of Contagion in [The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02128-0/fulltext)): The result is a valuable overview of COVID-19 statistics and how to navigate them. Rather than just quoting numbers, Spiegelhalter and Masters discuss how to think about epidemic data.
+**Prof Adam Kucharski** (LSHTM professor and author of 'The Rules of Contagion' in [The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02128-0/fulltext)): The result is a valuable overview of COVID-19 statistics and how to navigate them. Rather than just quoting numbers, Spiegelhalter and Masters discuss how to think about epidemic data.
 
 ## Acknowledgments {.appendix}
 
