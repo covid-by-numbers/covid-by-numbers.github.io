@@ -52,7 +52,7 @@ phe_flucovid_breaks <- c("2020-07-05", "2020-10-04", "2021-01-03", "2021-03-28")
   as_date()
 
 ## Creating the graphs
-# The first graph is of road fatality levels
+# The first graph is of road incident levels
 dot_incidents_gg1 <- dot_incidents_df %>%
   filter(road_user_type %in% c("all_road_users", "car_users", "pedal_cyclists")) %>%
   ggplot(aes(x = month, y = road_casualties, group = road_user_type)) +
