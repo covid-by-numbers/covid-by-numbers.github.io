@@ -1,7 +1,7 @@
 ---
 title: "Covid by Numbers"
 description: |
-  This site hosts for the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.
+  This site hosts the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.
 site: distill::distill_website
 ---
 
@@ -59,6 +59,8 @@ knitr::include_graphics("images/COVIDbyNumbers_Quote_HF.jpg")
 **Prof Oliver Johnson** (University of Bristol mathematics professor in [The Guardian](https://www.theguardian.com/books/2021/sep/30/covid-by-numbers-review-how-to-make-sense-of-the-statistics)): If journalists, politicians and the public were all provided with a copy then the debate would be vastly better informed, with much more light than heat.
 
 **Prof Adam Kucharski** (LSHTM professor and author of 'The Rules of Contagion' in [The Lancet](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02128-0/fulltext)): The result is a valuable overview of COVID-19 statistics and how to navigate them. Rather than just quoting numbers, Spiegelhalter and Masters discuss how to think about epidemic data.
+
+**Tom Whipple** (journalist for [The Times](https://www.thetimes.co.uk/article/covid-by-numbers-by-david-spiegelhalter-and-anthony-masters-review-mzf3n35q0)): [This] is a book without an agenda; it is simply explanation of the numbers that have ruled our lives. Reading it, it feels as though there are adults in the room.
 
 ## Acknowledgments {.appendix}
 
