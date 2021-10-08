@@ -10,6 +10,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Due to limits on space in the book, the publishers agreed that the end notes should only show the URL of each source.
 
+The file is available in the [GitHub repository](https://github.com/covid-by-numbers/covid-by-numbers.github.io/blob/main/images/Covid_By_Numbers_EndNotes_v1.pdf).
+
 As a work in progress, we want to include end notes in a standard citation format.
-
-
