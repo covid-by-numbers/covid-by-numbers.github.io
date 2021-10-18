@@ -6,7 +6,7 @@
       "description": "A place to store code and data from the book",
       "author": [],
       "contents": "\nCode and graphs\nEach link will take to the GitHub repository, where there is the R code and spreadsheets used to create the original graphs.\nThese graphs are in grey-scale. There are also some colour versions created for presentations by the authors. In addition, there is code for graphs cut from published versions of the book. In the book itself, graphs were remade in the house style, so the appearance differs.\n\n\n\nChapter 1: Introduction\nChapter 2: How did the pandemic develop?\nChapter 3: How infectious is SARS-CoV-2?\nChapter 4: What is the risk from new variants?\nChapter 6: How many cases have been found?\nChapter 7: How many people have been infected with SARS-CoV-2?\nChapter 8: How ill do people get with Covid?\nChapter 9: What happened in hospitals?\nChapter 10: How good are the treatments for Covid?\nChapter 11: How many people have died from Covid?\nChapter 12: How lethal is SARS-CoV-2?\nChapter 13: Who has been most at risk from Covid?\nChapter 14: How do we compare countries?\nChapter 15: How does the impact of Covid compare with other historical harms?\nChapter 16: What is the effect of measures against the spread of SARS-CoV-2?\nChapter 17: What are the collateral effects of the measures against Covid?\nChapter 18: How has behaviour changed during the pandemic?\nChapter 19: What has happened to mental health and well-being?\nChapter 21: What has been the effect on the economy?\nChapter 22: How effective are the vaccines?\nChapter 24: Who has been getting the vaccines? (in the same folder as Chapter 7)\nChapter 25: How far apart should the vaccines be given?\n\n\n\n",
-      "last_modified": "2021-10-13T18:03:10+00:00"
+      "last_modified": "2021-10-18T07:01:04+00:00"
     },
     {
       "path": "endnotes.html",
@@ -14,15 +14,15 @@
       "description": "Full end notes and other documentation",
       "author": [],
       "contents": "\nDue to limits on space in the book, the publishers agreed that the end notes should only show the URL of each source.\nThe file is available in the GitHub repository.\nAs a work in progress, we want to include end notes in a standard citation format.\n\n\n\n",
-      "last_modified": "2021-10-13T18:03:10+00:00"
+      "last_modified": "2021-10-18T07:01:04+00:00"
     },
     {
       "path": "errata.html",
       "title": "Errata",
       "description": "A place to note errata",
       "author": [],
-      "contents": "\nThis page notes errors and make corrections in the book. If you found an error, please contact us on covid-by-numbers@outlook.com.\nAll apologies in advance.\nErrors\nPage 81: The footnote starts: “Between 1 August 2020 and 31 March 2020”. The intended period was: “Between 1 August 2020 and 31 March 2021”.\nPage 107: In the table, the peak date of occurrence is written as “19th January 2020”. The intended date was: “19th January 2021”.\nPage 148: The footnote refers to the period: “up to 14 May 2020”. That date should be: “14 May 2021”.\nPage 296: In the index, “science Media Centre” is missing a capital on the first word. It should read: “Science Media Centre”.\n\n\n\n",
-      "last_modified": "2021-10-13T18:03:11+00:00"
+      "contents": "\nThis page notes errors and make corrections in the book. If you found an error, please contact us on covid-by-numbers@outlook.com.\nAll apologies in advance.\nErrors\nPage 81: The footnote starts: “Between 1 August 2020 and 31 March 2020”. The intended period was: “Between 1 August 2020 and 31 March 2021”.\nPage 107: In the table, the peak date of occurrence is written as “19th January 2020”. The intended date was: “19th January 2021”.\nPage 140: In Figure 14-2, the United Kingdom lines (I) are incorrectly elevated. That figure should look like:\n\n\n\nPage 148: The footnote refers to the period: “up to 14 May 2020”. That date should be: “14 May 2021”.\nPage 296: In the index, “science Media Centre” is missing a capital on the first word. It should read: “Science Media Centre”.\n\n\n\n",
+      "last_modified": "2021-10-18T07:01:05+00:00"
     },
     {
       "path": "index.html",
@@ -30,7 +30,7 @@
       "description": "This site hosts the code for the Covid by Numbers book by David Spiegelhalter and Anthony Masters.\n",
       "author": [],
       "contents": "\n\n\n\nThis is the accompanying website for Covid by Numbers, published by Penguin Random House on 7th October 2021. This book was written by David Spiegelhalter and Anthony Masters.\nThis book is to help you understand the pandemic statistics you see and hear in the news. The role of this website is to:\nHost the code and spreadsheet for the graphs produced in R.\nProvide code for selected updated graphs.\nCorrect any errors in the book’s text.\nProvide full end notes for the book.\nIf we have made an error in the book, please contact the authors:\ncovid-by-numbers@outlook.com.\nWhere to Buy\nThe hardback version of the book is available from:\nAmazon;\nBlackwells;\nBookshop.org;\nFoyles;\nHive;\nWaterstones;\nWHSmith.\nAn e-book copy is available from:\nAmazon;\nApple Books;\nKobo.\nReviews\n\n\n\nTom Chivers (columnist and co-author of ‘How to Read Numbers’): A clear, concise statistical journal of the plague year. If you want to understand the numbers behind the virus that stopped the world, you ought to read this book.\nDr Hannah Fry (mathematician, broadcaster, and author of ‘Hello World’): Fantastic and wonderfully readable. A much needed antidote to the often murky and misinterpreted world of Covid data, explained in a straightforward and clear way - yet always remembering the humanity the data represents.\nTim Harford (host of BBC’s More or Less and author of ‘How to Make the World Add Up’): I couldn’t imagine a better guidebook for making sense of a tragic and momentous time in our lives. Covid by Numbers is comprehensive yet concise, impeccably clear and always humane.\nProf Oliver Johnson (University of Bristol mathematics professor in The Guardian): If journalists, politicians and the public were all provided with a copy then the debate would be vastly better informed, with much more light than heat.\nProf Adam Kucharski (LSHTM professor and author of ‘The Rules of Contagion’ in The Lancet): The result is a valuable overview of COVID-19 statistics and how to navigate them. Rather than just quoting numbers, Spiegelhalter and Masters discuss how to think about epidemic data.\nTom Whipple (journalist for The Times): [This] is a book without an agenda; it is simply explanation of the numbers that have ruled our lives. Reading it, it feels as though there are adults in the room.\nAcknowledgments\nThis is a website made with the distill package. Many thanks to Rhian Davies (Jumping Rivers) for her help in building this website.\n\n\n\n",
-      "last_modified": "2021-10-13T18:03:11+00:00"
+      "last_modified": "2021-10-18T07:01:05+00:00"
     },
     {
       "path": "updated.html",
@@ -38,7 +38,7 @@
       "description": "Some selected updated graphs",
       "author": [],
       "contents": "\nUpdated graphs\nThe code for these graphs is available in the GitHub repository. These versions have been updated in the font and colours associated with the book. Some graphs also show more recent statistics.\nFigure 3-3:\n\n\n\nFigure 11-2:\n\n\n\nFigure 15-2:\n\n\n\nFigure 19-1:\n\n\n\n\n\n\n",
-      "last_modified": "2021-10-13T18:03:12+00:00"
+      "last_modified": "2021-10-18T07:01:06+00:00"
     }
   ],
   "collections": []
