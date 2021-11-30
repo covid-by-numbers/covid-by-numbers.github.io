@@ -21,8 +21,8 @@
       "title": "Errata",
       "description": "A place to note errata",
       "author": [],
-      "contents": "\nThis page notes errors and make corrections in the book. If you found an error, please contact us on covid-by-numbers@outlook.com.\nAll apologies in advance.\nErrors\nPage 81: The footnote starts: “Between 1 August 2020 and 31 March 2020”. The intended period was: “Between 1 August 2020 and 31 March 2021”.\nPage 107: In the table, the peak date of occurrence is written as “19th January 2020”. The intended date was: “19th January 2021”.\nPage 140: In Figure 14-2, the United Kingdom lines (I) are incorrectly elevated. That figure should look like:\n\n\n\nPage 148: The footnote refers to the period: “up to 14 May 2020”. That date should be: “14 May 2021”.\nPage 296: In the index, “science Media Centre” is missing a capital on the first word. It should read: “Science Media Centre”.\n\n\n\n",
-      "last_modified": "2021-10-18T07:01:05+00:00"
+      "contents": "\nThis page notes errors and make corrections in the book. If you found an error, please contact us on covid-by-numbers@outlook.com.\nAll apologies in advance.\nErrors\nPage 81: The footnote starts: “Between 1 August 2020 and 31 March 2020”. The intended period was: “Between 1 August 2020 and 31 March 2021”.\nPage 107: In the table, the peak date of occurrence is written as “19th January 2020”. The intended date was: “19th January 2021”.\nPage 140: In Figure 14-2, the United Kingdom lines (I) are incorrectly elevated. That figure should look like:\n\n\n\nPage 148: The footnote refers to the period: “up to 14 May 2020”. That date should be: “14 May 2021”.\nPage 151: The y-axis label should read “Deaths per 100,000 people”, rather than “Number of daily doses”.\nPage 296: In the index, “science Media Centre” is missing a capital on the first word. It should read: “Science Media Centre”.\n\n\n\n",
+      "last_modified": "2021-11-30T09:08:08+00:00"
     },
     {
       "path": "index.html",

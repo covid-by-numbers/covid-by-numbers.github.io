@@ -23,4 +23,5 @@ knitr::include_graphics("code/14-COU/COU_ons_countries_gg.jpeg")
 ```
 
 - **Page 148**: The footnote refers to the period: "up to 14 May 2020". That date should be: "14 May 2021".
+- **Page 151**: The y-axis label should read "Deaths per 100,000 people", rather than "Number of daily doses".
 - **Page 296**: In the index, "science Media Centre" is missing a capital on the first word. It should read: "Science Media Centre".

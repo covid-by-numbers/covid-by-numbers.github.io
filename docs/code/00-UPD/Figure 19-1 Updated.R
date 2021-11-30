@@ -7,7 +7,7 @@ library(scales)
 library(patchwork)
 
 # Next, we load the plotting theme
-source("/cloud/project/code/0-UPD/CBN Theme.R")
+source("/cloud/project/code/00-UPD/CBN Theme.R")
 
 ## Drawing the data
 # We draw the data directly from the online ONS file
@@ -26,84 +26,37 @@ ons_opn_tbl <- read_excel(temp, sheet = "Table 1b",
          happiness = 3, anxious = 4) %>%
   rownames_to_column(var = "date_text")
 
-# Dates are in a text format, so I provide a tibble
-ons_dates_df <- tribble(~start_date, ~end_date,
-                        "2020-03-20", "2020-03-30",
-                        "2020-03-27", "2020-04-06",
-                        "2020-04-03", "2020-04-13",
-                        "2020-04-09", "2020-04-20",
-                        "2020-04-17", "2020-04-27",
-                        "2020-04-24", "2020-05-03",
-                        "2020-05-01", "2020-05-10",
-                        "2020-05-07", "2020-05-17",
-                        "2020-05-14", "2020-05-17",
-                        "2020-05-21", "2020-05-24",
-                        "2020-05-28", "2020-05-31",
-                        "2020-06-04", "2020-06-07",
-                        "2020-06-11", "2020-06-14",
-                        "2020-06-18", "2020-06-21",
-                        "2020-06-25", "2020-06-28",
-                        "2020-07-02", "2020-07-05",
-                        "2020-07-08", "2020-07-12",
-                        "2020-07-15", "2020-07-19",
-                        "2020-07-22", "2020-07-26",
-                        "2020-07-29", "2020-08-02",
-                        "2020-08-05", "2020-08-09",
-                        "2020-08-12", "2020-08-16",
-                        "2020-08-26", "2020-08-30",
-                        "2020-09-09", "2020-09-13",
-                        "2020-09-16", "2020-09-20",
-                        "2020-09-24", "2020-09-27",
-                        "2020-09-30", "2020-10-04",
-                        "2020-10-07", "2020-10-11",
-                        "2020-10-14", "2020-10-18",
-                        "2020-10-21", "2020-10-25",
-                        "2020-10-28", "2020-11-01",
-                        "2020-11-05", "2020-11-08",
-                        "2020-11-11", "2020-11-15",
-                        "2020-11-18", "2020-11-22",
-                        "2020-11-25", "2020-11-29",
-                        "2020-12-02", "2020-12-06",
-                        "2020-12-10", "2020-12-13",
-                        "2020-12-16", "2020-12-20",
-                        "2020-12-22", "2021-01-03",
-                        "2021-01-07", "2021-01-10",
-                        "2021-01-13", "2021-01-17",
-                        "2021-01-20", "2021-01-24",
-                        "2021-01-27", "2021-01-31",
-                        "2021-02-03", "2021-02-07",
-                        "2021-02-10", "2021-02-14",
-                        "2021-02-17", "2021-02-21",
-                        "2021-02-24", "2021-02-28",
-                        "2021-03-03", "2021-03-07",
-                        "2021-03-10", "2021-03-14",
-                        "2021-03-17", "2021-03-21",
-                        "2021-03-24", "2021-03-28",
-                        "2021-03-31", "2021-04-04",
-                        "2021-04-07", "2021-04-11",
-                        "2021-04-14", "2021-04-18",
-                        "2021-04-21", "2021-04-25",
-                        "2021-04-28", "2021-05-03",
-                        "2021-05-05", "2021-05-09",
-                        "2021-05-12", "2021-05-16",
-                        "2021-05-19", "2021-05-23",
-                        "2021-05-26", "2021-05-30",
-                        "2021-06-02", "2021-06-06",
-                        "2021-06-09", "2021-06-13",
-                        "2021-06-16", "2021-06-20",
-                        "2021-06-23", "2021-06-27",
-                        "2021-06-30", "2021-07-04",
-                        "2021-07-07", "2021-07-11",
-                        "2021-07-14", "2021-07-18",
-                        "2021-07-21", "2021-07-25",
-                        "2021-07-28", "2021-08-01",
-                        "2021-08-04", "2021-08-08",
-                        "2021-08-11", "2021-08-15",
-                        "2021-08-18", "2021-08-22",
-                        "2021-08-25", "2021-09-05",
-                        "2021-09-08", "2021-09-19") %>%
-  mutate(start_date = as_date(start_date),
-         end_date = as_date(end_date))
+# Dates are in a text format
+ons_date_tbl <- str_split(str_squish(ons_opn_tbl$date_text),
+                          " to ", 2, simplify = TRUE) %>%
+  as_tibble(.name_repair = "unique") %>%
+  rename(text_1 = 1, text_2 = 2)
+
+ons_date_tbl <- ons_date_tbl %>%
+  mutate(day_1 = as.numeric(word(text_1)),
+         day_2 = as.numeric(word(text_2)),
+         month_1 = str_trim(str_replace_all(text_1, "[:digit:]", "")),
+         month_2 = str_trim(str_replace_all(text_2, "[:digit:]", ""))) %>%
+  mutate(month_1 = case_when(month_1 == "" ~ month_2,
+                             TRUE ~ month_1),
+         month_1 = match(str_sub(month_1, 1, 3), month.abb),
+         month_2 = match(str_sub(month_2, 1, 3), month.abb)) %>%
+  mutate(year_change_1 = case_when(month_1 - lag(month_1, 1) < 0 ~ 1,
+                                   TRUE ~ 0),
+         year_change_2 = case_when(month_2 - lag(month_2, 1) < 0 ~ 1,
+                                   TRUE ~ 0),
+         year_1 = 2020 + cumsum(year_change_1),
+         year_2 = 2020 + cumsum(year_change_2)) %>%
+  mutate(start_date = make_date(year = year_1,
+                                month = month_1,
+                                day = day_1),
+         end_date = make_date(year = year_2,
+                              month = month_2,
+                              day = day_2))
+
+# We then use the final two columns
+ons_dates_df <- ons_date_tbl %>%
+  dplyr::select(start_date, end_date)
 
 # Bind the dates to the main table
 ons_opn_df <- bind_cols(ons_opn_tbl, ons_dates_df) %>%
@@ -187,7 +140,7 @@ ons_anxiety_gg <- ons_opn_df %>%
   scale_x_date(date_breaks = "3 months",
                date_labels = "%d-%b\n%Y") +
   scale_y_continuous(limits = c(2.5, 5.5),
-                     breaks = c(2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5)) +
+                     breaks = seq(2.5, 5.5, 0.5)) +
   geom_hline(yintercept = ons_feb2020_df$anxious,
              linetype = "dashed", colour = "grey50", size = 1.1) +
   geom_text(aes(x = as_date("2020-09-20"),
