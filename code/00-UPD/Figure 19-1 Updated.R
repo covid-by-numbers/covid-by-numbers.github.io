@@ -12,8 +12,8 @@ source("/cloud/project/code/00-UPD/CBN Theme.R")
 ## Drawing the data
 # We draw the data directly from the online ONS file
 temp <- tempfile()
-ons_url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fhealthandsocialcare%2fhealthandwellbeing%2fdatasets%2fcoronavirusandthesocialimpactsongreatbritaindata%2fcurrent/referencetables240921.xlsx"
-ons_range <- "A4:BW10"
+ons_url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fhealthandsocialcare%2fhealthandwellbeing%2fdatasets%2fcoronavirusandthesocialimpactsongreatbritaindata%2f4february2022/referencetables040222.xlsx"
+ons_range <- "A4:CF10"
 temp <- curl_download(url = ons_url, destfile = temp,
                       quiet = TRUE, mode = "wb")
 
@@ -136,7 +136,7 @@ ons_happiness_gg <- ons_opn_df %>%
 # This is for the anxiety question
 ons_anxiety_gg <- ons_opn_df %>%
   ggplot(aes(x = end_date, y = anxious)) +
-  geom_line(size = 1.5, colour = "#ffef00") +
+  geom_line(size = 1.5, colour = "#B8AB00") +
   scale_x_date(date_breaks = "3 months",
                date_labels = "%d-%b\n%Y") +
   scale_y_continuous(limits = c(2.5, 5.5),
@@ -150,7 +150,7 @@ ons_anxiety_gg <- ons_opn_df %>%
             family = "Freight Text Pro") +
   theme(plot.subtitle = element_text(size = 16,
                                      face = "plain",
-                                     colour = "#ffef00")) +
+                                     colour = "#B8AB00")) +
   labs(x = "", y = "",
        subtitle = expression('Overall, how'~bold(anxious)~'did you feel yesterday?'))
 
@@ -158,7 +158,7 @@ ons_anxiety_gg <- ons_opn_df %>%
 fig_19_1_gg_upd <-
   (ons_lifesatisfaction_gg | ons_happiness_gg ) / ( ons_worthwhile_gg | ons_anxiety_gg ) +
   plot_annotation(title = "Estimated life satisfaction in Great British adults has yet to recover to its pre-lockdown level.",
-                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and September 2021.",
+                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and January 202.",
                   caption = "Source: Office for National Statistics - Opinions and Lifestyle surveys.")
 
 ## Saving the graph

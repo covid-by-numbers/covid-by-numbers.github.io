@@ -11,18 +11,19 @@ source("/cloud/project/code/00-UPD/CBN Theme.R")
 
 ## Drawing the data
 # I draw these figures straight from the online file
-ons_url <- "https://www.ons.gov.uk/visualisations/dvc1593/fig3/datadownload.xlsx"
-ons_range <- "A8:R88"
+ons_url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fweeklyprovisionalfiguresondeathsregisteredinenglandandwales%2f2021/publishedweek522021.xlsx"
+ons_range <- "A5:R100"
 ons_first_date <- as_date("2020-03-13")
-ons_last_date <- as_date("2021-09-17")
-ons_subtitle <- "Number of excess deaths by place of occurrence in England and Wales, registered between 7 March 2020 and 17 September 2021."
-ons_caption <- "Source: Office for National Statistics: Deaths registered weekly in England and Wales, provisional: week ending 17th September 2021."
+ons_last_date <- as_date("2021-12-31")
+ons_subtitle <- "Excess deaths by place of occurrence in England and Wales, registered between 7th March 2020 and 31st December 2021."
+ons_caption <- "Source: Office for National Statistics: Deaths registered weekly in England and Wales, provisional: week ending 31st December 2021."
 
 temp <- tempfile()
 temp <- curl_download(url = ons_url, destfile = temp,
                       quiet = TRUE, mode = "wb")
 
-ons_deathlocation_df <- read_excel(temp, sheet = "data",
+ons_deathlocation_df <- read_excel(temp,
+                                   sheet = "Weekly Excess Deaths",
                                    range = ons_range) %>%
   janitor::clean_names() %>%
   dplyr::select(year, week_no, starts_with("excess_deaths_")) %>%

@@ -33,8 +33,8 @@ phe_flucovid_gg1 <- phe_flucovid_df %>%
   scale_y_continuous(expand = c(0,0),
                      limits = c(0, 400)) +
   scale_colour_manual(name = "",
-                      labels = c("Covid-19-like", "Influenza-like", "Influenza-like (2018-19)"),
-                      values = c("#15c6d4", "#ec6752", "#ffef00")) +
+                      labels = c("Covid-19-like", "Influenza-like", "Influenza-like 2018-19"),
+                      values = c("#15c6d4", "#ec6752", "#B8AB00")) +
   theme(plot.subtitle = element_text(size = 20, face = "bold")) +
   labs(subtitle = "RCGP consultation rates (per 100,000 people)",
        x = "Week end date", y = "")
@@ -55,7 +55,7 @@ phe_flucovid_gg2 <- phe_flucovid_df %>%
        x = "Week end date", y = "")
 
 fig_17_1_gg_upd <- phe_flucovid_gg1 + phe_flucovid_gg2 +
-  plot_annotation(title = "Flu remains suppressed, with Covid-19 admission rates in England rising until January 2021.",
+  plot_annotation(title = "Flu was suppressed during the 2020-21 season, with Covid-19 admission rates in England rising until Jan-21.",
                   subtitle = "RCGP consultant rates and hospital admissions rates per 100,000 people in England. 29th June 2020 to 2nd May 2021.",
                   caption = "Source: PHE Weekly national Influenza and COVID-19 surveillance report, Week 18 2021; National flu report data: 5 March 2020 (week 10).")
 
