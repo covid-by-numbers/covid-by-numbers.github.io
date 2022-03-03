@@ -22,11 +22,11 @@ temp <- curl_download(url = ons_url, destfile = temp,
 ons_deaths_df <- read_excel(temp, sheet = "Table",
                             range = ons_range) %>%
   janitor::clean_names() %>%
+  filter(year >= 1900) %>%
   dplyr::rename(crude = 4, agest = 5) %>%
   dplyr::mutate(agest = as.numeric(agest))
 
 ons_mortality_rates_df <- ons_deaths_df %>%
-  filter(year >= 1900) %>%
   select(year, crude, agest) %>%
   pivot_longer(cols = 2:3,
                names_to = "measures",
@@ -45,14 +45,15 @@ ons_mortality_gg1 <- ons_deaths_df %>%
                      labels = label_comma(),
                      breaks = breaks_pretty(n = 7),
                      expand = c(0,0)) +
-  scale_fill_manual(values = c("#ffef00", "#009fdb")) +
+  scale_fill_manual(values = c("#222220", "#009fdb")) +
   theme(legend.position = "none",
         plot.subtitle = element_text(size = 20,
                                      face = "bold")) +
   labs(subtitle = "Number of death registrations in England and Wales",
        x = "Year",
        y = "") +
-  annotate("text", x = 1925, y = 650000, size = 6, family = "Freight Text Pro",
+  annotate("text", x = 1925, y = 650000,
+           size = 6, hjust = 0, family = "Freight Text Pro",
            label = "There are two years where death registrations exceeded 600,000:
   in 1918 (flu pandemic) and 2020 (COVID-19 pandemic).")
 
@@ -84,7 +85,7 @@ ons_mortality_gg2 <- ons_mortality_rates_df %>%
 
 fig_15_2_gg_upd <- ons_mortality_gg1 + ons_mortality_gg2 +
   plot_annotation(title = "In 2020, there were over 608,000 death registrations in England and Wales.",
-                  subtitle = "Deaths registrations from all causes in England and Wales, with age-standardised and crude mortality rates by year.",
+                  subtitle = "Deaths registrations of civilians from all causes in England and Wales, with age-standardised and crude mortality rates by year.",
                   caption = "Source: Office for National Statistics, 1900 to 2020 (provisional).")
 
 ## Saving the graph

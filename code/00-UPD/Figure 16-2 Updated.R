@@ -30,5 +30,5 @@ fig_16_2_gg_upd <- uk_visits_abroad_df %>%
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_16_2_gg_upd.jpeg",
        plot = fig_16_2_gg_upd,
-       device = "tiff",
+       device = "jpeg",
        height = 750/96, width = 1500/96, dpi = 96)

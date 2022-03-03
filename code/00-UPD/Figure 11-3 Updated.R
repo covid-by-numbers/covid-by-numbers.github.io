@@ -67,5 +67,5 @@ fig_11_3_gg_upd <- ons_deathlocation_df %>%
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_11_3_gg_upd.jpeg",
        plot = fig_11_3_gg_upd,
-       device = "tiff",
+       device = "jpeg",
        height = 800/96, width = 1600/96, dpi = 96)

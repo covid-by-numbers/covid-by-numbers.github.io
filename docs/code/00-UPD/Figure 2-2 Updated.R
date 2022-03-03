@@ -56,7 +56,7 @@ fig_2_2_gg_upd <- importation_tidy_df %>%
   scale_y_continuous(limits = c(0, 30),
                      expand = c(0,0)) +
   scale_colour_manual(aesthetics = c("colour", "fill"),
-                      values = c("#1c1d1a", "#15c6d4", "#ec6752", "#009fdb", "#ffef00", "grey50")) +
+                      values = c("#222220", "#15c6d4", "#ec6752", "#009fdb", "#B8AB00", "grey50")) +
   guides(fill = "none", colour = "none") +
   labs(title = "About 6 in 10 imported lineages came from France, Italy, and Spain.",
        subtitle = str_wrap("Estimated virus lineage importations with observed onward transmission per day (imputed) from the lag model. Statistical assignment to each country is a point estimate: there is uncertainty around each of these estimates. Total estimates are rounded.",

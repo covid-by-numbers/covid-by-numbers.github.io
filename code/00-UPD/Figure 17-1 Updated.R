@@ -124,5 +124,5 @@ fig_17_1_gg_upd <- ukhsa_flucovid_gg1 + ukhsa_flucovid_gg2 +
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_17_1_gg_upd.jpeg",
        plot = fig_17_1_gg_upd,
-       device = "tiff",
+       device = "jpeg",
        height = 800/96, width = 1600/96, dpi = 96)

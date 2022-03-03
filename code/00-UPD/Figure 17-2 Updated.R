@@ -84,5 +84,5 @@ fig_17_2_gg_upd <- dot_incidents_gg1 + dot_incidents_gg2 +
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_17_2_gg_upd.jpeg",
        plot = fig_17_2_gg_upd,
-       device = "tiff",
+       device = "jpeg",
        height = 800/96, width = 1800/96, dpi = 96)

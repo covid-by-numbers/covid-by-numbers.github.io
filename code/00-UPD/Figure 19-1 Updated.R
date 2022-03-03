@@ -164,5 +164,5 @@ fig_19_1_gg_upd <-
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_19_1_gg_upd.jpeg",
        plot = fig_19_1_gg_upd,
-       device = "tiff",
+       device = "jpeg",
        height = 800/96, width = 1800/96, dpi = 96)
