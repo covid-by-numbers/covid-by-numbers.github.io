@@ -17,6 +17,11 @@ ukhsa_2022_w_end_date <- as_date("2022-02-20")
 ukhsa_analysis_date <- as_date("2021-07-04")
 ukhsa_fig33_range <- "B8:E61"
 ukhsa_fig39_range <- "B8:D60"
+
+# These lines change aspects of the final graph
+ukhsa_graph_title <- "Flu was suppressed during winter again, with Covid-19 admission rates in England rising until Jan-22."
+ukhsa_graph_subtitle <- "RCGP consultant rates and hospital admissions rates per 100,000 people in England, between 28 June 2021 and 20 Febraury 2022."
+ukhsa_graph_caption <- "Source: UKHSA Weekly national Influenza and COVID-19 surveillance report, Week 8 2022; PHE national flu report: 18 April 2019 (week 16)."
 ukhsa_graph_pos_date <- as_date("2021-10-03")
 
 phe_url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/796520/Weekly_national_influenza_report_data_week_16_2019.ods"
@@ -117,9 +122,9 @@ ukhsa_flucovid_gg2 <- ukhsa_flucovid_df %>%
            fontface = "bold", colour = "#ec6752")
 
 fig_17_1_gg_upd <- ukhsa_flucovid_gg1 + ukhsa_flucovid_gg2 +
-  plot_annotation(title = "Flu was suppressed during winter again, with Covid-19 admission rates in England rising until Jan-22.",
-                  subtitle = "RCGP consultant rates and hospital admissions rates per 100,000 people in England, between 28 June 2021 and 13 Febraury 2022.",
-                  caption = "Source: UKHSA Weekly national Influenza and COVID-19 surveillance report, Week 8 2022; PHE national flu report: 18 April 2019 (week 16).")
+  plot_annotation(title = ukhsa_graph_title,
+                  subtitle = ukhsa_graph_subtitle,
+                  caption = ukhsa_graph_caption)
 
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_17_1_gg_upd.jpeg",
