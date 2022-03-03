@@ -119,7 +119,7 @@ ukhsa_flucovid_gg2 <- ukhsa_flucovid_df %>%
 fig_17_1_gg_upd <- ukhsa_flucovid_gg1 + ukhsa_flucovid_gg2 +
   plot_annotation(title = "Flu was suppressed during winter again, with Covid-19 admission rates in England rising until Jan-22.",
                   subtitle = "RCGP consultant rates and hospital admissions rates per 100,000 people in England, between 28 June 2021 and 13 Febraury 2022.",
-                  caption = "Source: UKHSA Weekly national Influenza and COVID-19 surveillance report, Week 7 2022; PHE national flu report: 18 April 2019 (week 16).")
+                  caption = "Source: UKHSA Weekly national Influenza and COVID-19 surveillance report, Week 8 2022; PHE national flu report: 18 April 2019 (week 16).")
 
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_17_1_gg_upd.jpeg",
