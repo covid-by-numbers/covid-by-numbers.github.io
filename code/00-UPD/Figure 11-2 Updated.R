@@ -11,12 +11,12 @@ source("/cloud/project/code/00-UPD/CBN Theme.R")
 
 ## Drawing the data
 # I draw these figures straight from the online file
-ons_url <- "https://www.ons.gov.uk/visualisations/dvc1792/fig1/datadownload.xlsx"
-ons_range <- "A7:E116"
+ons_url <- "https://www.ons.gov.uk/visualisations/dvc1836/fig1/datadownload.xlsx"
+ons_range <- "A7:E119"
 ons_first_date <- as_date("2020-01-03")
-ons_last_date <- as_date("2022-01-28")
-ons_subtitle <- "Number of deaths registered by week in England and Wales. Registrations are between 28th December 2019 and 28th January 2022. Registrations are influenced by public holidays."
-ons_caption <- "Source: Office for National Statistics: Deaths registered weekly in England and Wales, provisional: week ending 28th January 2022."
+ons_last_date <- as_date("2022-02-18")
+ons_subtitle <- "Number of deaths registered by week in England and Wales. Registrations are between 28th December 2019 and 18th February 2022. Registrations are influenced by public holidays."
+ons_caption <- "Source: Office for National Statistics: Deaths registered weekly in England and Wales, provisional: week ending 18th February 2022."
 
 temp <- tempfile()
 temp <- curl_download(url = ons_url, destfile = temp,
@@ -66,7 +66,7 @@ fig_11_2_gg_upd <- ons_deathreg_tidy_df %>%
                     values = c("#ec6752", "#15c6d4")) +
   labs(title = "In 2020, death registrations exceeded the 2015-2019 average in two extended periods.",
        subtitle = str_wrap(ons_subtitle, 110),
-       x = "Week end date",
+       x = "Week end date (Friday)",
        y = "Weekly death registrations",
        caption = ons_caption) +
   annotate("text", x = as_date("2020-06-12"), y = 17000,
@@ -89,5 +89,5 @@ fig_11_2_gg_upd <- ons_deathreg_tidy_df %>%
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_11_2_gg_upd.jpeg",
        plot = fig_11_2_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 800/96, width = 1600/96, dpi = 96)

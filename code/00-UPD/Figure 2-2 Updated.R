@@ -68,5 +68,5 @@ fig_2_2_gg_upd <- importation_tidy_df %>%
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_2_2_gg_upd.jpeg",
        plot = fig_2_2_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 750/96, width = 1500/96, dpi = 96)

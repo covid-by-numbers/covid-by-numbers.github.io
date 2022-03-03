@@ -91,5 +91,5 @@ fig_15_2_gg_upd <- ons_mortality_gg1 + ons_mortality_gg2 +
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_15_2_gg_upd.jpeg",
        plot = fig_15_2_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 1000/96, width = 2000/96, dpi = 96)

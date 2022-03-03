@@ -47,5 +47,5 @@ fig_3_3_gg_upd <- negbinom_df %>%
 # Saving the graph with the required dimensions
 ggsave(file = "/cloud/project/code/00-UPD/fig_3_3_gg_upd.jpeg",
        plot = fig_3_3_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 750/96, width = 1500/96, dpi = 96)

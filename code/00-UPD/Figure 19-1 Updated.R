@@ -12,8 +12,8 @@ source("/cloud/project/code/00-UPD/CBN Theme.R")
 ## Drawing the data
 # We draw the data directly from the online ONS file
 temp <- tempfile()
-ons_url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fhealthandsocialcare%2fhealthandwellbeing%2fdatasets%2fcoronavirusandthesocialimpactsongreatbritaindata%2f4february2022/referencetables040222.xlsx"
-ons_range <- "A4:CF10"
+ons_url <- "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fhealthandsocialcare%2fhealthandwellbeing%2fdatasets%2fcoronavirusandthesocialimpactsongreatbritaindata%2f18february2022/referencetables180222.xlsx"
+ons_range <- "A4:CG10"
 temp <- curl_download(url = ons_url, destfile = temp,
                       quiet = TRUE, mode = "wb")
 
@@ -158,11 +158,11 @@ ons_anxiety_gg <- ons_opn_df %>%
 fig_19_1_gg_upd <-
   (ons_lifesatisfaction_gg | ons_happiness_gg ) / ( ons_worthwhile_gg | ons_anxiety_gg ) +
   plot_annotation(title = "Estimated life satisfaction in Great British adults has yet to recover to its pre-lockdown level.",
-                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and January 202.",
+                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and January 2022.",
                   caption = "Source: Office for National Statistics - Opinions and Lifestyle surveys.")
 
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_19_1_gg_upd.jpeg",
        plot = fig_19_1_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 800/96, width = 1800/96, dpi = 96)

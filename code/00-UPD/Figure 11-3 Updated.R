@@ -60,12 +60,12 @@ fig_11_3_gg_upd <- ons_deathlocation_df %>%
   scale_y_continuous(labels = label_comma()) +
   labs(title = "Deaths at home continue to be above the 2015-2019 average.",
        subtitle = ons_subtitle,
-       x = "Week end date",
+       x = "Week end date (Friday)",
        y = "Excess deaths (weekly deaths minus the 2015-2019 average)",
        caption = ons_caption)
 
 ## Saving the graph
 ggsave(file = "/cloud/project/code/00-UPD/fig_11_3_gg_upd.jpeg",
        plot = fig_11_3_gg_upd,
-       device = "jpeg",
+       device = "tiff",
        height = 800/96, width = 1600/96, dpi = 96)
