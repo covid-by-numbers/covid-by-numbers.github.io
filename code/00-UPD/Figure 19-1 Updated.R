@@ -158,7 +158,7 @@ ons_anxiety_gg <- ons_opn_df %>%
 fig_19_1_gg_upd <-
   (ons_lifesatisfaction_gg | ons_happiness_gg ) / ( ons_worthwhile_gg | ons_anxiety_gg ) +
   plot_annotation(title = "Estimated life satisfaction in Great British adults has yet to recover to its pre-lockdown level.",
-                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and January 2022.",
+                  subtitle = "Mean estimated scores (out of 10), for a survey of adults in Great Britain between March 2020 and February 2022.",
                   caption = "Source: Office for National Statistics - Opinions and Lifestyle surveys.")
 
 ## Saving the graph
