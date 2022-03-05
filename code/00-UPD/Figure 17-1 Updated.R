@@ -131,3 +131,73 @@ ggsave(file = "/cloud/project/code/00-UPD/fig_17_1_gg_upd.jpeg",
        plot = fig_17_1_gg_upd,
        device = "jpeg",
        height = 800/96, width = 1600/96, dpi = 96)
+
+## Log scales version
+ukhsa_graph_subtitle_log <- paste0(
+  ukhsa_graph_subtitle,
+  " The two graphs both have logarithmic scales, with zero values suppressed. The same distance means the same multiplicative factor.")
+
+# First graph
+ukhsa_flucovid_gg1_log <- ukhsa_flucovid_df %>%
+  dplyr::filter(measures %in% c("covid_19_like_indicator_rate", "ili_rate", "ili_rate_2018_19")) %>%
+  ggplot(aes(x = week_end_date, y = rates, group = measures)) +
+  geom_line(aes(colour = measures), size = 1.5) +
+  scale_x_date(breaks = ukhsa_flucovid_breaks,
+               date_labels = "%d %b\n%Y") +
+  scale_y_continuous(labels = scales::comma_format(accuracy = 1),
+                     expand = c(0,0),
+                     limits = c(NA, 1500),
+                     trans = "log10") +
+  scale_colour_manual(guide = "none",
+                      values = c("#15c6d4", "#ec6752", "#B8AB00")) +
+  theme(plot.subtitle = element_text(size = 20, face = "bold")) +
+  labs(subtitle = "RCGP consultation rates (per 100,000 people)",
+       x = "Week end date (Sunday)", y = "") +
+  annotate("text", x = ukhsa_graph_pos_date, y = 1300,
+           label = "Covid-19-like indicator", hjust = 0,
+           family = "Freight Text Pro", size = 6,
+           fontface = "bold", colour = "#15c6d4") +
+  annotate("text", x = ukhsa_graph_pos_date, y = 2,
+           label = "Influenza-like illness", hjust = 0,
+           family = "Freight Text Pro", size = 6,
+           fontface = "bold", colour = "#ec6752") +
+  annotate("text", x = ukhsa_graph_pos_date, y = 20,
+           label = "Influenza-like illness\n(2018-19)", hjust = 0,
+           family = "Freight Text Pro", size = 6,
+           fontface = "bold", colour = "#B8AB00")
+
+# Second graph
+ukhsa_flucovid_gg2_log <- ukhsa_flucovid_df %>%
+  filter(measures %in% c("covid_19_hospital_admission_rate", "influenza_hospital_admission_rate"),
+         rates > 0) %>%
+  ggplot(aes(x = week_end_date, y = rates, group = measures)) +
+  geom_line(aes(colour = measures), size = 1.5) +
+  scale_x_date(breaks = ukhsa_flucovid_breaks,
+               date_labels = "%d %b\n%Y") +
+  scale_y_continuous(expand = c(0,0),
+                     trans = "log10") +
+  scale_colour_manual(guide = "none",
+                      values = c("#15c6d4", "#ec6752")) +
+  theme(plot.subtitle = element_text(size = 20, face = "bold")) +
+  labs(subtitle = "Hospital admission rates (per 100,000 people)",
+       x = "Week end date (Sunday)", y = "") +
+  annotate("text", x = ukhsa_graph_pos_date, y = 12,
+           label = "Covid-19", hjust = 0,
+           family = "Freight Text Pro", size = 6,
+           fontface = "bold", colour = "#15c6d4") +
+  annotate("text", x = ukhsa_graph_pos_date, y = 0.4,
+           label = "Influenza", hjust = 0,
+           family = "Freight Text Pro", size = 6,
+           fontface = "bold", colour = "#ec6752")
+
+# Patchwork
+fig_17_1_gg_upd_log <- ukhsa_flucovid_gg1_log + ukhsa_flucovid_gg2_log +
+  plot_annotation(title = ukhsa_graph_title,
+                  subtitle = str_wrap(ukhsa_graph_subtitle_log, width = 130),
+                  caption = ukhsa_graph_caption)
+
+# Save
+ggsave(file = "/cloud/project/code/00-UPD/fig_17_1_gg_upd_log.jpeg",
+       plot = fig_17_1_gg_upd_log,
+       device = "jpeg",
+       height = 900/96, width = 1800/96, dpi = 96)
